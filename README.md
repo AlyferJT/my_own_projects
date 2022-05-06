@@ -1,2 +1,2 @@
-# MyOwnProjects
+# My Own Projects
 There are the projects that i did from 0
