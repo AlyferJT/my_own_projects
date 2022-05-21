@@ -1,0 +1,150 @@
+html {
+    font-size: 62.5%;
+}
+
+*:link, *:visited *:hover *:active {
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.netflix_logo {
+    width: 19rem;
+    cursor: pointer;
+}
+
+.top {
+    background: url(https://i.pinimg.com/originals/f1/6f/ed/f16fedc86686146624897737cf4338d8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 97%;
+    height: 93.6vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+
+    padding: 2rem;
+}
+
+.top::after {
+    content: '';
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.712);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top__header--selectors {
+    padding-right: 7rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.enter--btn {
+    padding: .8rem 2.2rem;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.lang--btn {
+    background-color: rgba(0, 0, 0, 0.493);
+    color: white;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: .9rem 1.5rem;
+    cursor: pointer;
+}
+
+.lang--btn:active {
+    border: 1px solid white;
+}
+
+.top__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.top__main--title {
+    font-size: 5rem;
+    width: 60%;
+    text-align: center;
+}
+
+.top__main--espec {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: -2rem;
+}
+
+.top__main--paragraph {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.top__main--email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 8rem;
+}
+
+.email--form {
+    width: 100%;
+}
+
+.email--input {
+    width: 70%;
+    height: 4rem;
+    padding: 1rem;
+    border-radius: 2px;
+    border-style: none;
+    border: 1px solid rgb(105, 105, 105);
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.email--input:focus {
+    outline: 0px solid;
+    border: 1px solid rgb(39, 96, 255);
+}
+
+.email--submit {
+    width: 26%;
+    height: 6rem;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 2.2rem;
+    transform: translateY(2px);
+    cursor: pointer;
+}
